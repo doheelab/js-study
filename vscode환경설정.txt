@@ -1,0 +1,17 @@
+1. Material Theme -> Darker High Contrast
+2. Material Icon Theme
+3. Prettier -> Ctrl + shift + p -> settings -> format on save -> prettier -> tab width 2 -> quote single + quote single in Prettier
+4. Bracket Pair Colorizer
+5. Indent Rainbow
+6. Auto Rename Tag
+7. CSS Peak
+8. HTML CSS Support
+9. Live server 
+10. Markdown Preview <- 내장 기능
+//
+11. setting.json ->   
+"editor.tokenColorCustomizations": {
+    "comments": "#ffc6b3"
+  }
+
+12. 
