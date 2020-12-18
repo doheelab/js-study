@@ -1,7 +1,7 @@
 'use strict';
 
 // Promise is a JavaScript object for asynchronous operation.
-// state -> 현재 상태를 알려준다.
+// State -> 현재 상태를 알려준다.
 // State: pending(operation 수행중) -> fulfilled(완료) or rejected(문제 발생)
 
 //  1. Producer -> executer라는 콜백함수를 전달
@@ -50,8 +50,8 @@ const getHen = () =>
   });
 const getEgg = (hen) =>
   new Promise((resolve, reject) => {
-    setTimeout(() => resolve(`${hen} => 달걀`), 1000);
-    // setTimeout(() => reject(new Error(`error ${hen} => '달걀`)), 1000);
+    // setTimeout(() => resolve(`${hen} => 달걀`), 1000);
+    setTimeout(() => reject(new Error(`error ${hen} => '달걀`)), 1000);
   });
 const cook = (egg) =>
   new Promise((resolve, reject) => {
@@ -63,5 +63,4 @@ getHen()
     return '빵'; // 위에서 문제가 생겼을 때 처리
   })
   .then(cook) // (egg) => cook(egg)
-  .then(console.log) // (meal) => console.log(meal)
-  .catch(console.log);
+  .then(console.log); // (meal) => console.log(meal)

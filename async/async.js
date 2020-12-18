@@ -1,18 +1,18 @@
 // async & await
 // clear style of using promise :)
 
+// 1. async라는 키워드를 함수 안에 쓰면, 함수가 자동으로 Promise로 변환된다.
+async function fetchUser() {
+  // do network request in 10 secs...
+  return 'ellie';
+}
+
 // function fetchUser() {
 //   return new Promise((resolve, reject) => {
 //     // do network request in 10 secs...
 //     resolve('ellie');
 //   });
 // }
-
-// 1. async라는 키워드를 함수 안에 쓰면, 함수가 자동으로 Promise로 변환된다.
-async function fetchUser() {
-  // do network request in 10 secs...
-  return 'ellie';
-}
 
 const user = fetchUser();
 user.then(console.log);

@@ -1,5 +1,4 @@
 'use strict';
-
 // JavaScript is synchronous - Execute the code block in order after hoisting.
 // hoisting: var, function declaration이 가장 위로 올라감
 // 비동기: 언제 코드가 실행될 지 예측할 수가 없는 것

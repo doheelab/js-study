@@ -30,9 +30,6 @@ class UserStorage {
   }
 }
 
-const userStorage = new UserStorage();
-const id = prompt('enter your id'); // browser API
-const password = prompt('enter your password');
 // userStorage.loginUser(
 //   id,
 //   password,
@@ -53,6 +50,10 @@ const password = prompt('enter your password');
 //     console.log(error);
 //   }
 // );
+
+const userStorage = new UserStorage();
+const id = prompt('enter your id'); // browser API
+const password = prompt('enter your password');
 
 userStorage
   .loginUser(id, password)
