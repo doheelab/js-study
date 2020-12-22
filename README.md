@@ -1,68 +1,64 @@
-# Javascript 스터디 내용 정리
+# JavaScript 스터디 내용 정리
 
 ## JS 관련
 
-> 비동기 처리 (promise, async, await)
+- 비동기 처리 (promise, async, await)
+
+<br>
 
 ## React 관련
 
 > react-persist
 
-Redux (middleware, selector, Flux 디자인 패턴)
+- Redux (middleware, store design, selector, Flux 디자인 패턴)
 
-react-hook
+- react-hook
 
-redux-saga (react-thunk)
+- redux-saga (react-thunk)
 
-Router (history, match, location)
+- Router (history, match, location)
 
-Navigation
+- Navigation
 
-Mobx
+- Mobx
 
-Typescript
+- Typescript
 
-검색기능 추가
+- 검색기능 추가
+
+<br>
 
 ## 웹 개발 일반
 
 > WebAPI - axios, fetch, API 문서 작성법 등
 
-RestAPI
+- RestAPI
 
-Firebase authentication
+- Firebase authentication
 
-unit test (testable code)
+- unit test (testable code)
 
-refactoring
+- refactoring
 
-PostCSS
+- PostCSS
 
-SSL (https)
+- SSL (https)
 
-GraphGL (apollo) vs RestAPI
+- GraphGL (apollo) vs RestAPI
 
-Github 사용법
+- EC2 (AWS)
 
-EC2 (AWS)
+- Docker, Jenkins, Kubernetese
 
-Docker, Jenkins, Kubernetese
+- AWS lambda
 
-AWS lambda
+- Media query
 
-Html, CSS
+- animation
 
-Media query
+- HTTP, SSL
 
-animation
-
-## 회사 프로젝트
-
-menu recommender 회원가입 시 s3에 폴더 생성
-
-로딩 화면, 에러 화면 만들기
-
-RecommendMenu.js 분리하는 방법
+<br>
 
 ## JC
 
