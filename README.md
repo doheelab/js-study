@@ -10,15 +10,17 @@
 
 > react-persist
 
-- Redux (middleware, store design, selector, Flux 디자인 패턴)
-
-- react-hook
-
-- redux-saga (react-thunk)
+- Redux middleware, store design)
 
 - Router (history, match, location)
 
 - Navigation
+
+- useReducer
+
+- react-hook
+
+- redux-saga (redux-thunk)
 
 - Mobx
 
@@ -26,23 +28,25 @@
 
 - 검색기능 추가
 
+- React.memo
+
+- React hooks
+
 <br>
 
 ## 웹 개발 일반
 
 > WebAPI - axios, fetch, API 문서 작성법 등
 
-- RestAPI
+> RestAPI
 
-- Firebase authentication
+- SSL (https)
 
 - unit test (testable code)
 
 - refactoring
 
 - PostCSS
-
-- SSL (https)
 
 - GraphGL (apollo) vs RestAPI
 
@@ -56,12 +60,10 @@
 
 - animation
 
-- HTTP, SSL
-
 <br>
 
 ## JC
 
-> cookie
+> Cookie
 
 > CORS
