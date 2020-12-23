@@ -12,6 +12,8 @@
 
 - Redux middleware, store design)
 
+- 검색기능 추가
+
 - Router (history, match, location)
 
 - Navigation
@@ -25,8 +27,6 @@
 - Mobx
 
 - Typescript
-
-- 검색기능 추가
 
 - React.memo
 
