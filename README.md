@@ -2,7 +2,7 @@
 
 ## JS 관련
 
-- 비동기 처리 (promise, async, await)
+> 비동기 처리 (promise, async, await)
 
 <br>
 
@@ -10,7 +10,7 @@
 
 > react-persist
 
-- Redux middleware, store design)
+- Redux middleware, store design
 
 - 검색기능 추가
 
@@ -36,9 +36,7 @@
 
 ## 웹 개발 일반
 
-> WebAPI - axios, fetch, API 문서 작성법 등
-
-> RestAPI
+> WebAPI, RestAPI
 
 - SSL (https)
 
@@ -67,3 +65,5 @@
 > Cookie
 
 > CORS
+
+> Formik
