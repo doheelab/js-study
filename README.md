@@ -10,7 +10,9 @@
 
 > react-persist
 
-- Redux middleware, store design
+> redux middleware (thunk)
+
+> Redux store design
 
 - 검색기능 추가
 
@@ -18,11 +20,7 @@
 
 - Navigation
 
-- useReducer
-
-- react-hook
-
-- redux-saga (redux-thunk)
+- react-hook (useReducer)
 
 - Mobx
 
@@ -67,3 +65,5 @@
 > CORS
 
 > Formik
+
+> DOM
