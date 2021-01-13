@@ -44,7 +44,7 @@ source code : https://github.com/reduxjs/redux/blob/master/src/combineReducers.t
 
 1) {...state, age: undefined}: age가 undefined로 남아있음
 
-2) _.omit(state, 'age')
+2) _.omit(state, 'age') - import _ from 'lodash';
 
 3) const { name, ...state2 } = state;
 
