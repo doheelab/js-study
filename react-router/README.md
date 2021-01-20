@@ -44,24 +44,6 @@
 
 - 혹은 `to={{pathname:"/new-post", hash: "#submit", search: "?quick-submit=true"}}`
 
-## withRouter
-
-- route component가 아닐 때, 부모 component의 routing params을 props으로 넘겨주기 위해 쓴다.
-
-```javascript
-import { withRouter } from 'react-router-dom';
-...
-export default withRouter(componentName)
-```
-
-## Absolute Path
-
-- root domain에 직접 붙는 것 (default)
-
-## Relative Path (dynamic path)
-
-- `this.props.match.url + '/new-post'`
-
 ## NavLink
 
 - extra props을 통해 active link의 styling 가능
@@ -79,6 +61,24 @@ export default withRouter(componentName)
 - location: hash, pathname, search, state
 
 - history: push,...
+
+## withRouter
+
+- route component가 아닐 때, 부모 component의 routing params을 props으로 넘겨주기 위해 쓴다.
+
+```javascript
+import { withRouter } from 'react-router-dom';
+...
+export default withRouter(componentName)
+```
+
+## Absolute Path
+
+- root domain에 직접 붙는 것 (default)
+
+## Relative Path (dynamic path)
+
+- `this.props.match.url + '/new-post'`
 
 ### match, params 사용 예시
 
@@ -99,6 +99,8 @@ redirect: 현재 페이지를 대체한다.
 
 history.push: 기록이 쌓인다.
 
+history.replace: Redirect와 같은 효과
+
 ```javascript
 // 기본형
 <Redirect from "/" to="/posts"/>
@@ -113,9 +115,11 @@ return <div>... {redirect}</div>
 // history.push
 this.props.history.push('/posts')
 
+// history.replace
+this.props.history.replace('/posts')
 ```
 
-## Parameter & Query
+## params & query params
 
 - 페이지 주소 정의 시 유동적인 값의 전달이 필요한 경우 사용
 
@@ -129,13 +133,52 @@ this.props.history.push('/posts')
 
   - query는 어떤 키워드를 검색하거나, 요청 시 필요한 옵션의 전달에 사용한다.
 
-## Query params
+> query params 넘겨주기
+
+```javascript
+<Link to="/my-path?start=5">Go to Start</Link>
+
+// or
+<Link to={‌{
+        pathname: '/my-path',
+        search: '?start=5'
+    }}
+    >Go to Start</Link>
+```
+
+> quary parmas 받기
+
+```javascript
+componentDidMount() {
+    const query = new URLSearchParams(this.props.location.search);
+    for (let param of query.entries()) {
+        console.log(param); // yields ['start', '5']
+    }
+}
+```
+
+## hash fragment
+
+> hash 넘겨주기
+
+```javascript
+<Link to="/my-path#start-position">Go to Start</Link>
+
+// or
+<Link
+    to={‌{
+        pathname: '/my-path',
+        hash: 'start-position'
+    }}
+    >Go to Start</Link>
+
+```
 
 ## Reference
 
 https://muang-kim.tistory.com/53?category=835643
 
-출처: https://rednose86.tistory.com/10 [빨강코의 블로그]
+https://rednose86.tistory.com/10 [빨강코의 블로그]
 
 <!-- ## 파싱과 컴파일
 
