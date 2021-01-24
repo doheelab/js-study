@@ -1,40 +1,28 @@
 # JavaScript 스터디 내용 정리
 
-## JS 관련
+## JS & React & Web Development
 
 > 비동기 처리 (promise, async, await)
-
-<br>
-
-## React 관련
 
 > react-persist
 
 > redux middleware (thunk)
 
-> Redux store design
+> redux & store design
+
+> router (history, match, location)
+
+> restful API
 
 - 검색기능 추가
 
-- Router (history, match, location)
-
 - Navigation
-
-- react-hook (useReducer)
 
 - Mobx
 
 - Typescript
 
 - React.memo
-
-- React hooks
-
-<br>
-
-## 웹 개발 일반
-
-> WebAPI, RestAPI
 
 - SSL (https)
 
@@ -67,3 +55,5 @@
 > Formik
 
 > DOM
+
+> react-hook (useReducer)

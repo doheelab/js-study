@@ -1,0 +1,42 @@
+/* 사용법
+selector {
+  property: value;
+} */
+
+/* Universal selector */
+* {
+  color: green;
+}
+
+/* type(tag) selector */
+li {
+  color: blue;
+}
+
+/* id selector */
+#special {
+  color: pink;
+}
+
+/* type + id */
+/* li#special {
+  color: pink;
+} */
+
+/* class selector */
+.red {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+
+/* state selector */
+button:hover {
+  color: red;
+  background: beige;
+}
+
+/* property selector */
+a[href] {
+  color: purple;
+}
