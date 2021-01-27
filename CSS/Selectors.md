@@ -1,6 +1,6 @@
 # CSS(Cascading Style Sheet, 폭포)
 
-Author style (CSS, 최우선 순위) >> User Style >> Browser
+Author style (CSS, 최우선 순위) >> User Style >> Browser Style
 
 # selectors
 
@@ -16,7 +16,9 @@ Author style (CSS, 최우선 순위) >> User Style >> Browser
 
 # padding, margin, border
 
-> padding
+![padding](http://espezua.github.io/blog/imgs/boxmodel.png)
+
+## padding
 
 - 컨텐츠 안에 들어가는 space
 
@@ -26,11 +28,11 @@ Author style (CSS, 최우선 순위) >> User Style >> Browser
 
 - padding: 20px 0px
 
-> margin
+## margin
 
 - margin: 컨텐츠 밖에 들어가는 space
 
-> border
+## border
 
 - border-width, border-style, border-color 설정 가능
 
