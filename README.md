@@ -12,15 +12,19 @@
 
 > router (history, match, location)
 
-> restful API
+> Restful API
 
 - 검색기능 추가
 
 - Navigation
 
-- Mobx
+- 반응형 CSS
 
-- Typescript
+- Media query
+
+- PostCSS
+
+- Mobx
 
 - React.memo
 
@@ -30,8 +34,6 @@
 
 - refactoring
 
-- PostCSS
-
 - GraphGL (apollo) vs RestAPI
 
 - EC2 (AWS)
@@ -40,13 +42,11 @@
 
 - AWS lambda
 
-- Media query
-
 - animation
 
 <br>
 
-## JC
+## Others
 
 > Cookie
 
@@ -57,3 +57,7 @@
 > DOM
 
 > react-hook (useReducer)
+
+> useRef
+
+> Typescript
