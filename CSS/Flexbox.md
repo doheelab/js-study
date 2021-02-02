@@ -54,11 +54,11 @@
 
 - order: 순서를 지정할 수 있음
 
-- flex-grow: 얼마나 늘어날지
+- flex-grow: 얼마나 늘어날지 (default: 0)
 
-- flex-shrink: 얼마나 줄어들지
+- flex-shrink: 얼마나 줄어들지 (default: 0)
 
-- flex-basis: 차지하는 비율 지정
+- flex-basis: 아이템의 기본 크기를 설정 (default: auto), initial size of the flex item
 
 - algin-self: 아이템 별로 정렬
 
