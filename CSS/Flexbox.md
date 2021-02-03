@@ -70,7 +70,7 @@
 
 - flex: flex-grow, flex-shrink, flex-basis 값을 축약적으로 지정
 
-  - flex: initial (0 1 auto); 공간이 모자라면 크기가 줄어듦
+  - flex: initial (default, 0 1 auto); 공간이 모자라면 크기가 줄어듦
 
   - flex: auto (1 1 auto); 여유 공간이 있을 때 늘어남
 
@@ -78,7 +78,11 @@
 
   - flex: 1 (1 0 auto); flex-grow만 지정
 
-- algin-self: 아이템 별로 정렬
+- align-self: 아이템 별로 cross axis에 대한 정렬 설정
+
+  - auto (default): align-items를 상속
+
+  - 나머지는 align-items와 동일
 
 ## percentage, vh
 
@@ -88,7 +92,7 @@
 
 # References
 
-https://www.youtube.com/watch?v=7neASrWEFEM&t=491s
+[드림코딩] https://www.youtube.com/watch?v=7neASrWEFEM&t=491s
 
 [이번에야말로 CSS Flex를 익혀보자] https://studiomeal.com/archives/197
 
