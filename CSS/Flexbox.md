@@ -1,12 +1,18 @@
-# Key 1: container에 적용되는 속성, item에 적용되는 속성이 있다
+## flexbox란?
 
-# Key 2: 중심축(main)과 수직축(cross)이 있다
+- Flexible Box module은 flexbox 인터페이스 내의 아이템 간 공간 배분과 강력한 정렬 기능을 제공하기 위한 1차원 레이아웃 모델
+
+- flexbox를 1차원이라 칭하는 것은, 레이아웃을 다룰 때 한 번에 하나의 차원(행이나 열)만을 다룬다는 뜻입니다. 이는 행과 열을 함께 조절하는 CSS 그리드 레이아웃의 2차원 모델과는 대조됩니다.
+
+## key 1: container에 적용되는 속성, item에 적용되는 속성이 있다
+
+## key 2: 중심축(main)과 수직축(cross)이 있다
 
 ## 1. container 에 적용되는 속성
 
 - display: flex로 설정
 
-- flex-direction: 중심축을 설정
+- flex-direction : 중심축을 설정 (default: row)
 
   - row: 왼쪽에서 오른쪽
 
@@ -16,15 +22,17 @@
 
   - column-reverse: 아래에서 위로
 
-- flex-wrap: 컨테이너가 더 이상 아이템들을 한 줄에 담을 여유 공간이 없을 때 아이템 줄바꿈을 어떻게 할지 결정하는 속성
+- flex-wrap: 컨테이너가 더 이상 아이템들을 한 줄에 담을 여유 공간이 없을 때 아이템 줄바꿈을 어떻게 할지 결정하는 속성 (default: nowarp)
 
   - nowarp: 한줄에 빼곡히 붙어있다.
 
   - warp: 한줄에 꽉차면 다음 라인으로 넘어간다.
 
-- flex-flow: flex-direction과 flex-wrap을 한꺼번에 지정
+- flex-flow: flex-direction과 flex-wrap의 축약형 속성
 
-- justify-content: 중심축에서 아이템을 배치하는 속성
+  - flex-flow: row wrap;
+
+- justify-content: 중심축에서 아이템을 배치하는 속성 (default: flex-start)
 
   - flex-start: 시작부터 배치
 
@@ -56,15 +64,23 @@
 
 - flex-grow: 얼마나 늘어날지 (default: 0)
 
-- flex-shrink: 얼마나 줄어들지 (default: 0)
+- flex-shrink: 얼마나 줄어들지 (default: 1)
 
-- flex-basis: 아이템의 기본 크기를 설정 (default: auto), initial size of the flex item
+- flex-basis: 항목의 크기를 결정 (default: auto), flex 항목에 크기가 지정되어 있지 않으면 내용물 크기가 flex-basis 값으로 사용
+
+- flex: flex-grow, flex-shrink, flex-basis 값을 축약적으로 지정
+
+  - flex: initial (0 1 auto); 공간이 모자라면 크기가 줄어듦
+
+  - flex: auto (1 1 auto); 여유 공간이 있을 때 늘어남
+
+  - flex: none (0 0 auto); 항목의 크기가 고정
+
+  - flex: 1 (1 0 auto); flex-grow만 지정
 
 - algin-self: 아이템 별로 정렬
 
-# Key 2: 중심축(main)과 수직축(cross)이 있다
-
-# percentage, vh
+## percentage, vh
 
 - percentage(%): 부모의 100%를 채운다.
 
@@ -78,6 +94,10 @@ https://www.youtube.com/watch?v=7neASrWEFEM&t=491s
 
 [A Complete Guide to Flexbox] https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
+[MDN: flexbox의 기본개념] https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Flexbox%EC%9D%98_%EA%B8%B0%EB%B3%B8_%EA%B0%9C%EB%85%90
+
 [Color Tool] https://material.io/resources/color/
+
+[selector 게임] https://flukeout.github.io/
 
 [Flexbox Froggy] https://flexboxfroggy.com/#ko
