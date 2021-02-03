@@ -14,13 +14,17 @@
 
 > Restful API
 
-- 검색기능 추가
+> flexbox
 
-- Navigation
+- grid (CSS)
 
 - 반응형 CSS
 
 - Media query
+
+- 검색기능 추가
+
+- Navigation
 
 - PostCSS
 

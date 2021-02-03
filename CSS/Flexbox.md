@@ -54,9 +54,9 @@
 
   - baseline: 텍스트의 위치를 맞춰준다.
 
-- align-content: flex-wrap: wrap;이 설정된 상태에서, 아이템들의 행이 2줄 이상 되었을 때의 수직축 방향 정렬을 결정하는 속성
-
   - justify-content의 속성을 모두 사용할 수 있다.
+
+- align-content: flex-wrap: wrap;이 설정된 상태에서, 아이템들의 행이 2줄 이상 되었을 때의 수직축 방향 정렬을 결정하는 속성
 
 ## 2. item에 적용되는 속성
 
