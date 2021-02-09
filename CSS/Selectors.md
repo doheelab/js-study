@@ -1,8 +1,8 @@
-# CSS(Cascading Style Sheet, 폭포)
+<!-- # CSS(Cascading Style Sheet, 폭포)
 
-Author style (CSS, 최우선 순위) >> User Style >> Browser Style
+Author style (CSS, 최우선 순위) >> User Style >> Browser Style -->
 
-# selectors
+# Selectors
 
 테그를 골라서 스타일링 할 수 있음
 

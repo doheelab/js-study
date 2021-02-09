@@ -1,0 +1,30 @@
+/* body,
+html {
+  height: 100%;
+} */
+
+.container {
+  padding-top: 100px;
+  background: beige;
+  height: 100vh;
+  display: flex;
+}
+
+.item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.item1 {
+  background: #fdd4d4;
+  /* order: 2; */
+}
+.item2 {
+  background: #ce93d8;
+  /* order: 1; */
+}
+.item3 {
+  background: #90caf9;
+  /* order: 3; */
+}
