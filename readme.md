@@ -64,7 +64,7 @@
 
 <br>
 
-## Others
+## Study
 
 - Formik
 

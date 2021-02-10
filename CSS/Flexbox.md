@@ -22,11 +22,11 @@
 
   - column-reverse: 아래에서 위로
 
-- flex-wrap: 컨테이너가 더 이상 아이템들을 한 줄에 담을 여유 공간이 없을 때 아이템 줄바꿈을 어떻게 할지 결정하는 속성 (default: nowarp)
+- flex-wrap: 컨테이너가 더 이상 아이템들을 한 줄에 담을 여유 공간이 없을 때 아이템 줄바꿈을 어떻게 할지 결정하는 속성 (default: nowrap)
 
-  - nowarp: 한줄에 빼곡히 붙어있다.
+  - nowrap: 한줄에 빼곡히 붙어있다.
 
-  - warp: 한줄에 꽉차면 다음 라인으로 넘어간다.
+  - wrap: 한줄에 꽉차면 다음 라인으로 넘어간다.
 
 - flex-flow: flex-direction과 flex-wrap의 축약형 속성
 
@@ -56,7 +56,7 @@
 
   - justify-content의 속성을 모두 사용할 수 있다.
 
-- align-content: flex-wrap: wrap;이 설정된 상태에서, 아이템들의 행이 2줄 이상 되었을 때의 수직축 방향 정렬을 결정하는 속성
+- align-content: wrap이 설정된 상태에서, 아이템들의 행이 2줄 이상 되었을 때의 수직축 방향 정렬을 결정하는 속성
 
 ## 2. item에 적용되는 속성
 
@@ -83,12 +83,6 @@
   - auto (default): align-items를 상속
 
   - 나머지는 align-items와 동일
-
-## percentage, vh
-
-- percentage(%): 부모의 100%를 채운다.
-
-- vh: 보이는 것에 100% 쓴다.
 
 # References
 
