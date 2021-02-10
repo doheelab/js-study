@@ -18,7 +18,7 @@
 
   - [flexbox](https://github.com/doheelab/js-study/blob/master/CSS/Flexbox.md)
 
-  - grid
+  - [grid](https://github.com/doheelab/js-study/blob/master/CSS/Grid.md)
 
 - [WebAPIs (Restful API)](https://github.com/doheelab/js-study/tree/master/WebAPIs)
 
