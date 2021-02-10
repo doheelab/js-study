@@ -1,8 +1,20 @@
-# JavaScript 스터디 내용 정리
+# Front-end 스터디 내용 정리
 
-## JS & React & Web Development
+## CSS
+
+- [display](https://github.com/doheelab/js-study/blob/master/CSS/Display.md)
+
+- [selectors](https://github.com/doheelab/js-study/blob/master/CSS/Selectors.md)
+
+- [flexbox](https://github.com/doheelab/js-study/blob/master/CSS/Flexbox.md)
+
+- [grid](https://github.com/doheelab/js-study/blob/master/CSS/Grid.md)
+
+## JS
 
 - [비동기 처리 (promise, async, await)](https://github.com/doheelab/js-study/tree/master/async)
+
+## React
 
 - [redux middleware (thunk)](https://github.com/doheelab/js-study/tree/master/redux-thunk)
 
@@ -10,19 +22,13 @@
 
 - [router (history, match, location)](https://github.com/doheelab/js-study/tree/master/react-router)
 
-- CSS
+- [react-persist](https://github.com/doheelab/js-study/tree/master/react-persist)
 
-  - [display](https://github.com/doheelab/js-study/blob/master/CSS/Display.md)
-
-  - [selectors](https://github.com/doheelab/js-study/blob/master/CSS/Selectors.md)
-
-  - [flexbox](https://github.com/doheelab/js-study/blob/master/CSS/Flexbox.md)
-
-  - [grid](https://github.com/doheelab/js-study/blob/master/CSS/Grid.md)
+## Web Development
 
 - [WebAPIs (Restful API)](https://github.com/doheelab/js-study/tree/master/WebAPIs)
 
-- react-persist
+## Topics
 
 - regex
 
