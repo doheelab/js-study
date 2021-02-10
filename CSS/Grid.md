@@ -30,21 +30,33 @@ grid-template-columns: repeat(3, 1fr)
 
     - 예) minmax(100px, auto): 최소값 100px, 최대는 자동으로(auto) 늘어남
 
-- auto-fill, auto-fit: 정확한 아이템의 갯수를 알 수 없을 때 사용
-
-  - repeat() 함수와 함께 사용
-
-## 그리드의 형태를 자동으로 정의
-
-- grid-template-columns(또는 grid-template-rows)의 통제를 벗어난 위치에 있는 트랙의 크기를 지정
-
-- 횟수를 지정할 필요 없이 알아서 처리
-
 ## 간격 만들기
 
 - row-gap, column-gap, gap
 
+## 그리드의 형태를 자동으로 정의
+
+- grid-auto-rows, grid-auto-columns
+
+- grid-template-rows(또는 grid-template-columns)의 통제를 벗어난 위치에 있는 트랙의 크기를 지정
+
+- 횟수를 지정할 필요 없이 알아서 처리
+
+- auto-fill, auto-fit: 정확한 아이템의 갯수를 알 수 없을 때 사용
+
+  - repeat() 함수와 함께 사용
+
+## 모든 셀의 배치
+
+- justify-items, align-items
+
+- 값: start, center, end
+
+- 한 셀의 배치를 변경하고자 할 때는 justify-self를 사용
+
 ## 각 셀의 영역 지정
+
+- grid-row, grid-column
 
 - 이 속성들은 Grid 아이템에 적용하는 속성으로, 각 셀의 영역을 지정
 
