@@ -1,4 +1,4 @@
-# Front-end 스터디 내용 정리
+# 웹 개발 스터디 내용 정리
 
 ## CSS
 
@@ -24,9 +24,13 @@
 
 - [react-persist](https://github.com/doheelab/js-study/tree/master/react-persist)
 
+- [search](https://github.com/doheelab/js-study/tree/master/search)
+
 ## Web Development
 
 - [WebAPIs (Restful API)](https://github.com/doheelab/js-study/tree/master/WebAPIs)
+
+- [socket](https://github.com/doheelab/js-study/tree/master/socket)
 
 ## Topics
 
