@@ -32,7 +32,9 @@
 
 - [socket](https://github.com/doheelab/js-study/tree/master/socket)
 
-- regex
+- [regex](https://github.com/doheelab/js-study/tree/master/regex)
+
+
 
 ## Topics
 
@@ -68,6 +70,7 @@
 
 * animation
 
+
 <br>
 
 ## Study
@@ -89,3 +92,7 @@
 - security
 
 - Docker
+
+- Google Analytics (GA)
+
+- Mobx
