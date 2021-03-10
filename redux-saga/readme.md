@@ -9,12 +9,11 @@
 - 함수를 디스패치 할 수 있게 해주는 middleware
 
 - action creator가 action 대신 함수를 반환한다.
-   
 - 디버깅 테스트가 어렵다.
 
 ## redux-saga
 
-- action creator가 action object를 반환한다. 
+- action creator가 action object를 반환한다.
 
 - 디버깅, 테스트가 쉽다.
 
@@ -26,9 +25,9 @@
 
 ## Side Effect
 
-(자바스크립트) 코드가 외부 세계에 영향을 주거나 받는 것
+- (자바스크립트) 코드가 외부 세계에 영향을 주거나 받는 것
 
-redux-saga는 side effect를 관리하기 용이하게 함
+- redux-saga는 side effect를 관리하기 용이하게 함
 
 ## Generator
 
@@ -38,10 +37,10 @@ redux-saga는 side effect를 관리하기 용이하게 함
 
 - Callee vs Caller
 
-Callee (Generator function)
+Callee (Generator function, Saga)
 
 ```javascript
-function* myGeneratorFunction(){
+function* myGeneratorFunction() {
   yield 1;
   yield 2;
   yield 3;
@@ -55,24 +54,24 @@ const generator = myGeneratorFunction();
 
 console.log(generator.next().value); // 1
 console.log(generator.next().value); // 2
-console.log(generator.next().value); // 3 
+console.log(generator.next().value); // 3
 ```
 
 ## Saga
 
-Redux-Saga README
+(Redux-Saga README)
 
->"The mental model is that a **saga** is like a separate thread in your application that's solely responsible for side effects."
+> "The mental model is that a **saga** is like a separate thread in your application that's solely responsible for side effects."
 
-Saga는 Generator function이 되고, Redux-Saga Middleware는 Runner가 된다. 
+Saga는 Generator function이 되고, Redux-Saga Middleware는 Runner가 된다.
 
 ![image](https://user-images.githubusercontent.com/57972646/110562587-28cfa200-818d-11eb-8d5a-9e79ca5d8ed7.png)
 
 ## Effect
 
-미들웨어에 의해 수행되는 명령을 담고 있는 object
+middle에 의해 수행되는 명령을 담고 있는 object
 
-Saga는 Effect를 yield하고, Middleware는 Effect를 처리
+Saga는 effect를 yield하고, middleware는 effect를 처리
 
 ### Blocking Effect
 
@@ -83,8 +82,6 @@ Saga는 Effect를 yield하고, Middleware는 Effect를 처리
 비동기적 실행 (put(dispatch), fork 등)
 
 ![image](https://user-images.githubusercontent.com/57972646/110563641-f0c95e80-818e-11eb-92d8-0808d8323e2c.png)
-
-
 
 ## Readme
 
