@@ -1,4 +1,4 @@
 // v3
-const ExtendedComponent = Component.extend`
+const ExtendedComponent = styled(Component)`
   color: green;
 `;

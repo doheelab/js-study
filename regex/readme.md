@@ -9,11 +9,11 @@ marp: true
 ## 특정 문자열 찾기
 
 ```javascript
-'hello, world'.match(/hello/);
+"hello, world".match(/hello/);
 ```
 
 ```javascript
-['hello', (index: 0), (input: 'hello, world'), (groups: undefined)];
+["hello", (index: 0), (input: "hello, world"), (groups: undefined)];
 ```
 
 굳이 정규식을 사용하지 않더라도 include나 indexOf, search 같은 String.prototype 메소드를 사용해도 된다.
@@ -52,11 +52,11 @@ marp: true
 
 ```javascript
 // 문자열의 시작부터 4글자 매칭해!
-'I am Evan'.match(/^..../g);
+"I am Evan".match(/^..../g);
 ```
 
 ```javascript
-['I am'];
+["I am"];
 ```
 
 ---
@@ -66,12 +66,12 @@ marp: true
 `\d`는 숫자에 해당하는 문자를, `\D`는 숫자가 아닌 문자를 의미
 
 ```javascript
-'010-1111-1111'.match(/\d/g);
+"010-1111-1111".match(/\d/g);
 ```
 
 ```javascript
 // -를 제외한 0~9까지의 문자가 매칭된다
-['0', '1', '0', '1', '1', '1', '1', '1', '1', '1', '1'];
+["0", "1", "0", "1", "1", "1", "1", "1", "1", "1", "1"];
 ```
 
 ---
@@ -83,7 +83,7 @@ marp: true
 `\W`는 Word가 아닌 문자를 의미
 
 ```javascript
-'Phone(전화): 010-0000-1111'.match(/\w/g);
+"Phone(전화): 010-0000-1111".match(/\w/g);
 ```
 
 ```
@@ -126,11 +126,11 @@ marp: true
 ![boundary](https://evan-moon.github.io/static/6d1779cbaba0a0243ed42fc5d27d3228/6af66/boundaries.png)
 
 ```javascript
-'abc def'.match(/\b/g);
+"abc def".match(/\b/g);
 ```
 
 ```javascript
-['', '', '', ''];
+["", "", "", ""];
 ```
 
 ---
@@ -138,11 +138,11 @@ marp: true
 `\B`는 Word 그룹으로 이루어지지 않은 모든 경계를 의미
 
 ```javascript
-'abc def'.match(/\B/g);
+"abc def".match(/\B/g);
 ```
 
 ```javascript
-['', '', '', ''];
+["", "", "", ""];
 ```
 
 ![boundary2](https://evan-moon.github.io/static/97a4fb713d83f95c04382b7fb6b20106/6af66/boundaries2.png)
@@ -179,8 +179,8 @@ true
 
 ```javascript
 const regex = /abcd/i;
-regex.test('abcd'); // true
-regex.test('ABCD'); // true
+regex.test("abcd"); // true
+regex.test("ABCD"); // true
 ```
 
 ---
@@ -195,7 +195,7 @@ string.match(/\w{2}/g);
 ```
 
 ```javascript
-['ab', 'cd', 'ef', 'gh', 'ij', 'kl'];
+["ab", "cd", "ef", "gh", "ij", "kl"];
 ```
 
 ---
@@ -211,7 +211,7 @@ string.match(/^\w{2}/g);
 ```
 
 ```javascript
-['ab'];
+["ab"];
 ```
 
 이런 상황일 때 `m` 플래그를 사용하면 이전과는 다른 결과를 만들어낼 수 있다.
@@ -221,7 +221,7 @@ string.match(/^\w{2}/gm);
 ```
 
 ```javascript
-['ab', 'ef', 'ij'];
+["ab", "ef", "ij"];
 ```
 
 ---
@@ -231,19 +231,19 @@ string.match(/^\w{2}/gm);
 `{}` 표현은 바로 앞에 오는 표현의 반복 횟수를 의미하는데, `{0,2}`처럼 최소, 최대 반복 횟수를 사용하여 반복되는 범위를 표현해줄 수도 있다.
 
 ```javascript
-'aaaabbbcc'.match(/\w{3}/g);
+"aaaabbbcc".match(/\w{3}/g);
 ```
 
 ```javascript
-['aaa', 'abb', 'bcc'];
+["aaa", "abb", "bcc"];
 ```
 
 휴대폰 번호를 잡아내는 패턴
 
 ```javascript
-'010-0101-0101';
-'02-0101-0101';
-'031-010-0101';
+"010-0101-0101";
+"02-0101-0101";
+"031-010-0101";
 
 ```
 
@@ -262,15 +262,15 @@ string.match(/^\w{2}/gm);
 // 없어도 되고 여러 번 나와도 다 잡아라!
 const regex = /a*b/g;
 
-'b'.match(regex);
-'ab'.match(regex);
-'aab'.match(regex);
+"b".match(regex);
+"ab".match(regex);
+"aab".match(regex);
 ```
 
 ```javascript
-['b'];
-['ab'];
-['aab'];
+["b"];
+["ab"];
+["aab"];
 ```
 
 ---
@@ -284,15 +284,15 @@ const regex = /a*b/g;
 // 없어도 되고 여러 번 나와도 1개만 잡아라!
 const regex = /a?b/g;
 
-'b'.match(regex);
-'ab'.match(regex);
-'aab'.match(regex);
+"b".match(regex);
+"ab".match(regex);
+"aab".match(regex);
 ```
 
 ```javascript
-['b'];
-['ab'];
-['ab'];
+["b"];
+["ab"];
+["ab"];
 ```
 
 ---
@@ -306,15 +306,15 @@ const regex = /a?b/g;
 // 반드시 존재해야하고 여러 번 나와도 다 잡아라!
 const regex = /a+b/g;
 
-'b'.match(regex);
-'ab'.match(regex);
-'aab'.match(regex);
+"b".match(regex);
+"ab".match(regex);
+"aab".match(regex);
 ```
 
 ```javascript
 null;
-['ab'];
-['aab'];
+["ab"];
+["aab"];
 ```
 
 ---
@@ -326,11 +326,11 @@ null;
 예를 들어 $10000과 같이 달러 단위를 의미하는 문자열이 있다고 생각해보자. $문자와 그 뒤에 오는 1개 이상의 숫자를 잡아낼 수 있는 표현을 사용하면 우리는 원하는 패턴을 잡아낼 수 있다.
 
 ```javascript
-'$10000'.match(/\$\d+/g);
+"$10000".match(/\$\d+/g);
 ```
 
 ```javascript
-['$10000'];
+["$10000"];
 ```
 
 ---
@@ -347,11 +347,11 @@ null;
 ---
 
 ```javascript
-'$10000를 투자하여 $1000를 벌었다.'.replace(/\$(\d+)/g, '$1 달러');
+"$10000를 투자하여 $1000를 벌었다.".replace(/\$(\d+)/g, "$1 달러");
 ```
 
 ```javascript
-'10000 달러를 투자하여 1000 달러를 벌었다.';
+"10000 달러를 투자하여 1000 달러를 벌었다.";
 
 ```
 
@@ -370,18 +370,18 @@ null;
 이 정규식에서 필자는 `(\w)` 표현을 사용하여 문자열 내의 Word 그룹에 속한 글자를 캡처링하였고, 이후 `\1`이라는 표현을 사용하여 캡처링한 패턴을 다시 불러왔다. 즉, `\w`에 매칭된 패턴을 `\1`을 통해 불러옴으로써 반복이라는 패턴을 표현할 수 있는 것이다.
 
 ```javascript
-'aabccdeef'.match(/(\w)\1/g);
+"aabccdeef".match(/(\w)\1/g);
 ```
 
 ```javascript
-['aa', 'cc', 'ee'];
+["aa", "cc", "ee"];
 ```
 
 ---
 
 ```
 // v3
-const ExtendedComponent = Component.extend
+const ExtendedComponent = styled(Component)
 
 // v4
 const ExtendedComponent = styled(Component)
@@ -399,11 +399,11 @@ Search: `(\w+)\.extend`, Replace: `styled($1)`
 // <, >으로 감싸진 모든 문자열을 찾아라!
 const regex = /<.*>/g;
 
-'<p>This is p tag</p>'.match(regex);
+"<p>This is p tag</p>".match(regex);
 ```
 
 ```javascript
-['<p>This is p tag</p>'];
+["<p>This is p tag</p>"];
 ```
 
 정규식은 기본적으로 `<p>This is p tag</p>` 와 같이 최대한 길게 매칭되는 패턴을 잡도록 세팅되어있기 때문에, 결과가 이렇게 나오는 것이다. 이때 이렇게 최대한 길게 매칭되는 패턴을 잡으려는 매칭 방법을 **탐욕(Greedy)** 매칭이라고 한다. 말
@@ -417,11 +417,11 @@ const regex = /<.*>/g;
 // <, >으로 감싸진 모든 문자열을 게으르게 찾아라!
 const regex = /<.*?>/g;
 
-'<p>This is p tag</p>'.match(regex);
+"<p>This is p tag</p>".match(regex);
 ```
 
 ```javascript
-['<p>', '</p>'];
+["<p>", "</p>"];
 ```
 
 이전 표현과 비교했을 때 달라진 부분은 `“0개 이상의 패턴”`을 의미하는 `*` 수량자의 뒤 쪽에 `?`를 붙혔다는 것이다. 이렇게 게으른 매칭을 사용하게 되면 정규식은 매칭할 수 있는 패턴들 중 **가능한 가장 짧은 패턴**들을 찾게된다.
@@ -438,8 +438,8 @@ const regex = /https(?=:\/\/)/g;
 ```
 
 ```javascript
-regex.exec('https'); // null
-regex.exec('https://'); // ['https'] // or 'https://'.match(/https(?=:\/\/)/g)
+regex.exec("https"); // null
+regex.exec("https://"); // ['https'] // or 'https://'.match(/https(?=:\/\/)/g)
 ```
 
 ---
@@ -458,15 +458,15 @@ Lookaround는 총 4가지 패턴으로 다시 분류된다.
 ### 주어진 문자열 내에서 숫자만 골라내기
 
 ```javascript
-const NUMBERS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-const amount = '1,000원'
-  .split('')
+const NUMBERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+const amount = "1,000원"
+  .split("")
   .filter((v) => NUMBERS.includes(v))
-  .join('');
+  .join("");
 
 // 또는
 
-const amount = '1,000원'.replace(',', '').replace('원', '');
+const amount = "1,000원".replace(",", "").replace("원", "");
 ```
 
 이 방법의 한계는 `,`나 `원` 이외에 다른 문자가 섞여버리면 그 문자의 경우의 수만큼 replace를 반복해야한다. (1,000원...일까요? 같은 문자열이 들어오는 순간 망한다)
@@ -476,11 +476,11 @@ const amount = '1,000원'.replace(',', '').replace('원', '');
 정규표현식을 사용하면,
 
 ```javascript
-const amount = '1,000원'.replace(/[^0-9]/g, '');
+const amount = "1,000원".replace(/[^0-9]/g, "");
 // 또는
-const amount = '1,000원'.replace(/[^\d]/g, '');
+const amount = "1,000원".replace(/[^\d]/g, "");
 // or
-const amount = '1,000원'.replace(/\D/g, '');
+const amount = "1,000원".replace(/\D/g, "");
 ```
 
 ---
@@ -498,7 +498,7 @@ string.match(/(?<=\s)\S*\d+[0,만,억](?=원)/g);
 ```
 
 ```javascript
-['38조40230억2565만7000', '580억', '9400'];
+["38조40230억2565만7000", "580억", "9400"];
 ```
 
 필자가 사용한 `(?<=\s)\S*\d+[0,만,억](?=원)`라는 정규식의 의미는 대략 다음과 같다.
