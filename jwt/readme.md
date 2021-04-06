@@ -54,24 +54,26 @@ JWT는 쿠키 대신에 JSON Web Token(JWT)을 활용합니다. 인증 과정에
 
 ## JWT의 encode, decode
 
+
+
 ### Encoded의 구성요소
 
-인코딩된 Header: 첫번째 요소, base64 인코딩
+- 인코딩된 Header: 첫번째 요소, base64 인코딩
 
-인코딩된 Payload: 두번째 요소, 데이터
-- sub(subject, user id): 유저의 id
-- iat(issued at), exp or eat(expired at): 유효기간
+- 인코딩된 Payload: 두번째 요소, 데이터
+  - sub(subject, user id): 유저의 id
+  - iat(issued at), exp or eat(expired at): 유효기간
 
-Verify signature: Header와 Payload의 정보를 secret key를 통해 인코딩한 결과
+- Verify signature: Header와 Payload의 정보를 secret key를 통해 인코딩한 결과
 
 
-### decoded
+### decoded의 구성요소
 
-디코딩된 Header: 인코딩 알고리즘, 토큰 타입(JWT)
+- 디코딩된 Header: 인코딩 알고리즘, 토큰 타입(JWT)
 
-디코딩된 Payload: request에 대한 데이터
+- 디코딩된 Payload: `request`에 대한 데이터
 
-Verify signature: 토큰이 클라이언트에 의해 변조되지 않았는지 확인
+- Verify signature: 토큰이 클라이언트에 의해 변조되지 않았는지 확인
 
 [jwt.io]
 
@@ -83,7 +85,7 @@ Verify signature: 토큰이 클라이언트에 의해 변조되지 않았는지 
 
 - Cookies
 
-쿠키는 `http-only` 플래그를 사용해 암호화된 쿠키가 `https` 통신할 때만 사용하게 설정해 XSS의 문제(JS로 토큰값에 접근)를 완화시킬 수 있습니다. 하지만 CSRF(사이트 간 요청 위조) 공격의 위험이 있습니다. 다만 CSURF 등의 라이브러리를 사용하면 예방할 수 있기 때문에 보통 Cookie 사용을 권장합니다.
+쿠키는 `http-only` 플래그를 사용해 암호화된 쿠키가 `https` 통신할 때만 사용하게 설정해 XSS의 문제(JS로 토큰값에 접근)를 완화시킬 수 있습니다. 하지만` CSRF`(사이트 간 요청 위조) 공격의 위험이 있습니다. 다만 `CSURF` 등의 라이브러리를 사용하면 예방할 수 있기 때문에 보통 `cookie` 사용을 권장합니다.
 
 ## 참고자료 
 
