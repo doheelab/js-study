@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 //   return [value, setValue];
 // }
 
+///////////////////////////////////////////////////
+
 // key에 해당하는 값이 있으면 그 값을, 아니면 initialValue를 리턴
 function getSavedValue(key, initialValue) {
   console.log("rendering");

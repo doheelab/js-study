@@ -2,6 +2,7 @@ import React from "react";
 import useLocalStorage from "./useLocalStorage";
 
 export default function App() {
+  // const [name, setName] = useLocalStorage(() => "");
   const [name, setName] = useLocalStorage("name", () => "");
 
   return (
