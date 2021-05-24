@@ -26,6 +26,8 @@
 
 - [search](https://github.com/doheelab/js-study/tree/master/search)
 
+- [redux-saga](https://github.com/doheelab/js-study/tree/master/redux-saga)
+
 ## Web Development
 
 - [WebAPIs (Restful API)](https://github.com/doheelab/js-study/tree/master/WebAPIs)
@@ -34,17 +36,14 @@
 
 - [regex](https://github.com/doheelab/js-study/tree/master/regex)
 
+- [JWT](https://github.com/doheelab/js-study/tree/master/jwt)
+
+- [Event loop](https://github.com/doheelab/js-study/tree/master/event-loop)
 
 
 ## Topics
 
-- regex
-
-* 반응형 CSS
-
-* Media query
-
-* 검색기능 추가
+* 반응형 CSS (media query)
 
 * Navigation
 
