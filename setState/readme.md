@@ -1,6 +1,6 @@
 ---
 title: '[React] 비동기적 setState'
-date: 2021-05-30 00:00:00 -0400
+date: 2021-06-02 00:00:00 -0400
 categories: react
 tags: [react, react-hook, web-development, javascript, front-end]
 ---
@@ -50,7 +50,7 @@ const multiplyBy2AndAddBy1 = () => {
 
 ```
 
-이 때 `multiplyBy2AndAddBy1` 함수를 실행시키면, `multiplyBy2` 후에 `add`가 실행되는 것이 아니라, `add`만 실행이 됩니다.
+이 때 `multiplyBy2AndAddBy1` 함수를 실행시키면, `multiplyBy2` 후에 `add`가 실행되는 것이 아니라, 의도한 바와 달리 `add`만 실행이 됩니다.
 
 이런 현상이 일어나는 이유는 무엇일까요?
 
@@ -58,19 +58,21 @@ const multiplyBy2AndAddBy1 = () => {
 
 ## 문제의 원인
 
-`react`에서 여러 `setState` 호출을 만나면, 각 `setState`에 전달된 객체를 모두 추출한 후 `merge`하여 단일 객체로 만듭니다.
+`react`에서 여러 `setState` 호출을 만나면, 각 `setState`에 전달된 객체를 모두 추출한 후 **merge**하여 단일 객체로 만듭니다.
 
-이후 단일 객체를 사용하여 `setStat`e를 수행합니다.
+이후 단일 객체를 사용하여 `setState`를 수행합니다.
 
-객체를 `merge`하는 것은 다음과 같은 원리로 작동합니다.
+다음 예시코드를 통해 객체가 어떻게 **merge**되는지 살펴보겠습니다.
 
 ```javascript
+
 const singleObject = Object.assign(
   {},
   objectFromSetState1,
   objectFromSetState2,
   objectFromSetState3
 );
+
 ```
 
 이 때 3개의 객체가 동일한 키를 가지고 있다면, `Object.assign`에 마지막으로 전달된 객체(`objectFromSetState3`)의 키의 값만 적용됩니다.
@@ -81,7 +83,7 @@ const singleObject = Object.assign(
 
 이 문제를 해결하기 위해서는 `setState` 함수에 새로운 `state`를 반환하는 함수를 인자로 전달하면 됩니다.
 
-이렇게 하면 인자로 넘겨 받는 함수들은 `Queue`에 저장되어 순서대로 실행되게 됩니다. 
+이렇게 하면 인자로 넘겨 받는 함수들은 **Queue**에 저장되어 순서대로 실행되게 됩니다. 
 
 ```javascript
 
